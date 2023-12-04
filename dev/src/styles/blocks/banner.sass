@@ -1,0 +1,115 @@
+.banner
+  &__wrapper
+    border-radius: 48px
+    position: relative
+    max-width: 1344px
+    width: 100%
+    padding: 124px 70px 140px 70px
+    margin-top: 84px
+    overflow: hidden
+    margin-bottom: 60px
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  &__title
+    color: var(--text-contrast, #EBEBEB)
+    font-size: 22px
+    font-style: normal
+    font-weight: 400
+    line-height: 30px
+    max-width: 692px
+    span
+      color: var(--text-white, #FFF)
+      font-size: 62px
+      font-style: normal
+      font-weight: 500
+      line-height: 93px
+  &__subtitle
+    color: var(--text-white, #FFF)
+    font-family: Rubik
+    font-size: 48px
+    font-style: normal
+    font-weight: 500
+    line-height: 56px
+    max-width: 512px
+  &__btn
+    padding: 20px 32px
+    margin-top: 36px
+
+@media (max-width: 425px)
+  .banner
+    &__wrapper
+      margin-top: 50px
+      padding: 24px 16px
+      border-radius: 24px
+      margin-bottom: 32px
+    &__title
+      font-size: 18px
+      font-style: normal
+      font-weight: 400
+      line-height: 26px
+      text-align: center
+      span
+        font-size: 25px
+        font-style: normal
+        font-weight: 500
+        line-height: 50px
+    &__subtitle
+      font-size: 28px
+      font-style: normal
+      font-weight: 500
+      line-height: 34px
+      text-align: center
+    &__btn
+      margin-top: 14px
+      padding: 16px 32px
+      width: 100%
+      font-size: 16px
+      font-style: normal
+      font-weight: 500
+      line-height: 24px
+
+@media (min-width: 425px) and (max-width: 767px)
+  .banner
+    &__wrapper
+      margin-top: 75px
+      padding: 24px 16px
+      border-radius: 24px
+      margin-bottom: 32px
+    &__title
+      font-size: 20px
+      font-style: normal
+      font-weight: 400
+      line-height: 26px
+      text-align: center
+      span
+        font-size: 32px
+        font-style: normal
+        font-weight: 500
+        line-height: 50px
+    &__subtitle
+      font-size: 28px
+      font-style: normal
+      font-weight: 500
+      line-height: 34px
+      text-align: center
+      margin: 0 auto
+    &__btn
+      margin-top: 14px
+      padding: 16px 32px
+      width: 100%
+      font-size: 16px
+      font-style: normal
+      font-weight: 500
+      line-height: 24px
+      margin: 35px auto 0 auto
+      max-width: 350px
+      display: block
+
+@media (min-width: 480px) and (max-width: 767px)
+  .banner__wrapper
+    margin-top: 110px
+    padding: 28px 18px

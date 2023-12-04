@@ -1,0 +1,79 @@
+.descrBlocks
+  padding-bottom: 120px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    row-gap: 24px
+    flex-wrap: wrap
+  &__container
+    padding: 8px
+    border-radius: 24px
+    background: var(--bg-white, #FFF)
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08)
+    max-width: 432px
+    width: 100%
+  &__box
+    border-radius: 24px
+    border: 2px dashed #E9E9E9
+    padding: 14px
+    display: flex
+    flex-direction: column
+    gap: 16px
+    position: relative
+  &__images
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+@media (max-width: 425px)
+  .descrBlocks
+    padding-bottom: 64px
+    &__container
+      padding: 6px
+    &__box
+      padding: 8px
+      gap: 10px
+    &__check
+      position: absolute
+      top: 7px
+      right: 8px
+      width: 32px
+      height: 32px
+    &__images
+      justify-content: center
+    &__descr
+      font-size: 16px
+      text-align: center
+    &__wrapper
+      row-gap: 18px
+
+
+@media (min-width: 426px) and (max-width: 767px)
+  .descrBlocks
+    padding-bottom: 64px
+    &__container
+      padding: 6px
+      margin: 0 auto
+      max-width: 300px
+    &__box
+      padding: 8px
+      gap: 10px
+      height: 100%
+    &__check
+      position: absolute
+      top: 7px
+      right: 8px
+      width: 32px
+      height: 32px
+    &__images
+      justify-content: center
+    &__descr
+      font-size: 16px
+      text-align: center
+    &__wrapper
+      row-gap: 18px
+      
+          
+
+  

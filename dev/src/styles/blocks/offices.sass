@@ -1,0 +1,75 @@
+.offices
+  margin-bottom: 120px
+  &__wrapper
+    display: flex
+    gap: 24px
+    flex-wrap: wrap
+  &__list
+    flex-wrap: wrap
+    row-gap: 0px
+  &__li
+    max-width: 660px
+    width: 100%
+  &__liWrap
+    max-width: 100%
+    display: flex
+    gap: 16px
+    &-min
+      max-width: 60%
+    img
+      width: 24px
+      height: 22px
+  &__line
+    height: 1px
+    width: 100%
+    background: #AFAFAF
+    margin: 16px 0
+  &__photos
+    margin-top: 32px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 120px
+  &__photo
+    max-width: 432px
+    width: 100%
+    border-radius: 24px
+    height: auto
+    object-fit: cover
+
+
+@media ( max-width: 425px )
+  .offices
+    margin-bottom: 64px
+    &__title
+      text-align: center
+      margin-bottom: 24px
+    &__liWrap
+      gap: 0px
+      font-size: 16px
+      line-height: 24px
+      max-width: 100%
+      column-gap: 6px
+      letter-spacing: 0.1px
+      font-style: normal
+      font-weight: 500
+    &__line
+      margin: 12px 0 11px 0 
+    &__wrapper
+      display: block
+    &__photos
+      margin-top: 23px
+      flex-direction: column
+      gap: 16px
+      margin-bottom: 64px
+    
+@media ( min-width: 426px ) and (max-width: 767px)
+  .offices
+    margin-bottom: 64px
+    &__photos
+      flex-wrap: wrap
+      gap: 16px
+      margin: 23px auto 65px auto
+      justify-content: center
+    &__photo
+      max-width: 300px
