@@ -20,6 +20,7 @@
     flex-direction: column
     gap: 16px
     position: relative
+    height: 100%
   &__images
     display: flex
     justify-content: space-between
@@ -74,6 +75,16 @@
     &__wrapper
       row-gap: 18px
       
-          
 
-  
+@media (min-width: 768px) and (max-width: 1023px)
+  .descrBlocks
+    &__container
+      max-width: 368px
+    &__wrapper
+      justify-content: center
+      column-gap: 24px
+
+@media (min-width: 1024px) and (max-width: 1199px)
+  .descrBlocks__wrapper
+    justify-content: center
+    column-gap: 24px

@@ -197,7 +197,7 @@
       padding: 16px
       margin-bottom: 48px
       margin: 0 auto 48px auto
-      max-width: 330px
+      max-width: 420px
     &__subtitle
       font-size: 20px
       line-height: 26px
@@ -233,6 +233,81 @@
       flex-wrap: wrap
       column-gap: 12px
 
+@media (min-width: 768px) and (max-width: 1023px)
+  .map
+    padding: 0 20px
+    &__descr
+      text-align: center
+      margin-bottom: 24px
+    &__bg
+      display: none
+      &-mob
+        display: flex
+        width: 100%
+        height: auto
+        border-radius: 24px
+        margin-bottom: 16px
+    &__wrapper
+      display: none
+      &-mob
+        display: block
+    &__openMap-mob
+      border-radius: 16px
+      background: var(--bg-gray, #EFEFEF)
+      display: flex
+      gap: 12px
+      justify-content: center
+      align-items: center
+      padding: 12px 16px
+      max-width: 393px
+      margin: 0 auto 32px auto
+    &__locate
+      width: 36px
+      height: 36px
+    &__advs
+      border-radius: 16px
+      box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.12)
+      padding: 16px
+      margin-bottom: 48px
+      margin: 0 auto
+      max-width: 330px
+    &__subtitle
+      font-size: 20px
+      line-height: 26px
+      padding-bottom: 16px
+    &__advInfo
+      font-size: 32px
+      line-height: 41px
+    &__advText
+      color: var(--text-caption-on-dark, #616161)
+      font-size: 16px
+      font-style: normal
+      font-weight: 500
+      line-height: 24px
+    &__line
+      margin: 8px 0
+    &__advWrapper
+      flex-direction: column
+      gap: 24px
+      margin: 0 auto
+      justify-content: center
+    &__advContainer
+      padding: 16px
+      border-radius: 16px
+      margin: 0 auto
+    &__advDescr
+      font-size: 16px
+      font-style: normal
+      font-weight: 500
+      line-height: 24px
+    &__locateText
+      font-size: 18px
+    &__advsWrap
+      display: flex
+      flex-wrap: wrap
+      gap: 24px
 
-
-
+@media (min-width: 1024px) and (max-width: 1199px)
+  .map
+    &__bg
+      object-fit: cover
